@@ -5,6 +5,7 @@
         margin-bottom: 30px;
     }
     .container{
+        // Use la resolucion de 1199px en esta parte de la pagina porque es el punto especifico donde se rompia
         @media screen and (max-width: 1199px){
             display: none;
         }

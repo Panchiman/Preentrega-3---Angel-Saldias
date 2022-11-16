@@ -1,7 +1,10 @@
+@import "../base/variables";
+
 .contenedor-clientes{
     display: flex;
     padding: 60px;
     flex-direction: column;
+    // No se esta sera la forma mas optima de usar los @media en sass pero fue la unica forma de que todo me funcionara correctamente
     @media screen and (max-width: $resolucion-mobile){
         padding: 10px;
     }

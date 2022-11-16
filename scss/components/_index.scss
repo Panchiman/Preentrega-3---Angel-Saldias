@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 .seccion-presentacion{
     display: flex;
     justify-content: center;
@@ -12,7 +14,7 @@
             padding-left: 10px;
             padding-right: 10px;
         }
-        @media screen and (max-width: 991px){
+        @media screen and (max-width: $resolucion-responsive){
             width: 95%;
             h1{
                 font-size: 30px;
@@ -27,7 +29,7 @@
             width: 100%;
             display: flex;
             margin-bottom: 60px;
-            @media screen and (max-width: 991px){
+            @media screen and (max-width: $resolucion-responsive){
                 flex-direction: column;
                 .imagen-quienes-somos{
                     width: 100%;

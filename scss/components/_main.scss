@@ -1,14 +1,14 @@
 @import "../base/variables";
+
+// Decidi divir los archivos de sass en el main para lo que afecta a todas las paginas, footer y header para esas partes y despues uno para cada pagina individual para organizarlo mejor
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-
 }
-
-/* Se que la pagina es fea, pasa que claramente el diseño no es lo mio, espero poder mejorarla visualmente para la prox */
-
-body{background: rgb(255,245,223);
+body{
+    background: rgb(255,245,223);
     background: linear-gradient(0deg, rgba(255,245,223,1) 0%, rgba(254,215,178,1) 100%);
 }
 
