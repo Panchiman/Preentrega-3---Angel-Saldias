@@ -1,0 +1,21 @@
+.contenedor-clientes{
+    display: flex;
+    padding: 60px;
+    flex-direction: column;
+    @media screen and (max-width: $resolucion-mobile){
+        padding: 10px;
+    }
+    h1{
+        margin-bottom: 60px;
+        @media screen and (max-width: $resolucion-mobile){
+            margin-bottom: 30px;
+            font-size: 35px;
+        }
+    }
+    
+    .text-color{
+        color: rgb(242, 169, 35);
+        font-weight: 800;
+        text-shadow: 1px 1px 2px black;
+    }
+}

@@ -1,0 +1,25 @@
+@import "../base/variables";
+
+.contenedor-contactos{
+    margin-bottom: 80px;
+    margin-left: 40px;
+    margin-top: 60px;
+    @media screen and (max-width: $resolucion-mobile){
+        margin-left: 0px;
+
+    }
+    h1{
+    margin-bottom: 120px;
+    }
+    p{
+    margin-bottom: 30px;
+    }
+    .mapa{
+        width: 100%;
+        min-height: 600px;
+        padding-right: 30px;
+        @media screen and (max-width: $resolucion-mobile){
+        padding-right: 0px;
+        }
+    }
+}

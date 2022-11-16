@@ -1,0 +1,58 @@
+@import "../base/variables";
+
+#contenedor-galeria{
+    
+    margin-top: 30px;
+    @media screen and (max-width: $resolucion-mobile){
+        h1{
+            font-size: 30px;
+        }
+    }
+    .galeria-seccion{
+        @media screen and (max-width: 1075px){
+            display: none;
+        }
+        .galeria {
+            display: flex;
+            justify-content: space-around;
+            .imagen-galeria{
+                width: 350px;
+                height: 220px;
+                margin-bottom: 150px;
+            }
+            
+        }
+        .carousel-control-next-icon{
+            position: relative;
+            bottom: 70px;
+            left: 20%;
+        }
+        .carousel-control-prev-icon{
+            position: relative;
+            bottom: 70px;
+            right: 20%;
+        }
+    }
+    .galeria-mobile{
+        display: none;
+        @media screen and (max-width: 1075px){
+            display: block;
+            margin-bottom: 60px;
+            .carousel-control-next-icon{
+                position: relative;
+                bottom: 0px;
+                left: 0px;
+            }
+            .carousel-control-prev-icon{
+                position: relative;
+                bottom: 0px;
+                right: 0px;
+            }
+            .imagen-galeria-mobile{
+                min-height: 100
+            }
+        }
+    }
+}
+
+
