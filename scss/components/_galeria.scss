@@ -4,7 +4,11 @@
     
     margin-top: 30px;
     h1{
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        margin-left: 7%;
+        @media screen and (max-width: 1200px){
+            margin-left: 0%;
+        }
     }
     @media screen and (max-width: $resolucion-mobile){
         h1{
@@ -23,6 +27,7 @@
                 width: 350px;
                 height: 220px;
                 margin-bottom: 150px;
+                box-shadow: 5px 1px 25px 5px rgb(187, 152, 117);
             }
             
         }

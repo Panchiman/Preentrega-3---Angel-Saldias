@@ -1,7 +1,9 @@
 header {
-  margin: 3px 10px;
   display: flex;
   justify-content: space-between;
+  background-color: rgb(253, 200, 150);
+  padding-bottom: 10px;
+  box-shadow: 0rem 1px 15px 1px rgb(197, 158, 119);
 }
 header .icono-header:hover {
   transition: all 1.5s ease;
@@ -17,9 +19,10 @@ header a {
 header img {
   border-radius: 100%;
   width: 80px;
+  margin: 8px 0px 0px 8px;
 }
 header nav {
-  background-color: rgb(254, 215, 178);
+  background-color: rgb(253, 200, 150);
 }
 header .navbar-nav .nav-link.active, header .navbar-nav .show > .nav-link {
   font-weight: 700;
@@ -35,8 +38,9 @@ header header nav li {
 }
 
 footer {
-  margin-right: 30px;
-  margin-left: 80px;
+  background-color: rgb(253, 200, 150);
+  box-shadow: 0rem 1px 20px 1px rgb(197, 158, 119);
+  padding: 20px 3% 15px 5%;
 }
 @media screen and (max-width: 600px) {
   footer {
@@ -47,7 +51,6 @@ footer {
 footer img {
   height: 30px;
   margin-right: 15px;
-  margin-top: 20px;
 }
 @media screen and (max-width: 600px) {
   footer img {
@@ -60,8 +63,7 @@ footer img {
 }
 footer .container-fluid .footer {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 15px;
+  justify-content: space-evenly;
 }
 @media screen and (max-width: 600px) {
   footer .container-fluid .footer {
@@ -179,6 +181,14 @@ main {
   margin-bottom: 50px;
 }
 
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
 .productos {
   margin-top: 30px;
 }
@@ -194,6 +204,7 @@ main {
   width: 320px;
   height: 220px;
   margin-bottom: 40px;
+  box-shadow: 5px 1px 10px 3px rgb(187, 152, 117);
 }
 .productos .container-fluid {
   display: none;
@@ -242,7 +253,13 @@ main {
   margin-top: 30px;
 }
 #contenedor-galeria h1 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-left: 7%;
+}
+@media screen and (max-width: 1200px) {
+  #contenedor-galeria h1 {
+    margin-left: 0%;
+  }
 }
 @media screen and (max-width: 600px) {
   #contenedor-galeria h1 {
@@ -262,6 +279,7 @@ main {
   width: 350px;
   height: 220px;
   margin-bottom: 150px;
+  box-shadow: 5px 1px 25px 5px rgb(187, 152, 117);
 }
 #contenedor-galeria .galeria-seccion .carousel-control-next-icon {
   position: relative;
