@@ -392,12 +392,20 @@ main {
   text-shadow: 1px 1px 2px black;
 }
 @media screen and (max-width: 991px) {
-  .seccion-presentacion .contenedor-presentacion {
-    width: 95%;
+  .seccion-presentacion .contenedor-presentacion h1 {
+    font-size: 40px;
+    top: 60px;
   }
+}
+@media screen and (max-width: 429px) {
   .seccion-presentacion .contenedor-presentacion h1 {
     font-size: 30px;
-    top: 40px;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .seccion-presentacion .contenedor-presentacion {
+    width: 95%;
   }
 }
 
