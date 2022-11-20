@@ -265,6 +265,21 @@ main {
   font-weight: 800;
   text-shadow: 1px 1px 2px black;
 }
+.contenedor-clientes .carousel-item .texto-oculto {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .contenedor-clientes .carousel-item .texto-oculto {
+    display: block !important;
+    position: relative;
+    top: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contenedor-clientes .carousel-indicators button {
+    display: none;
+  }
+}
 
 #contenedor-galeria {
   margin-top: 30px;
