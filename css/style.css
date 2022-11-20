@@ -2,8 +2,8 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(253, 200, 150);
-  padding-bottom: 10px;
   box-shadow: 0rem 1px 15px 1px rgb(197, 158, 119);
+  padding: 8px 0px;
 }
 header .icono-header:hover {
   transition: all 1.5s ease;
@@ -19,19 +19,36 @@ header a {
 header img {
   border-radius: 100%;
   width: 80px;
-  margin: 8px 0px 0px 8px;
+  margin-left: 8px;
 }
 header nav {
   background-color: rgb(253, 200, 150);
 }
 header .navbar-nav .nav-link.active, header .navbar-nav .show > .nav-link {
   font-weight: 700;
+  background-color: rgb(216, 3, 3);
+  letter-spacing: 1px;
+}
+header:hover {
+  color: white;
+}
+header .navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
+  padding: 10px 20px 10px 20px;
+}
+header .navbar-expand-lg .navbar-nav .nav-link:hover {
+  font-weight: 700;
+  background-color: rgb(122, 21, 21);
 }
 header .nav-link {
   font-weight: 600;
+  border-radius: 15px;
+  background-color: #d86143;
 }
-header .nav-link:hover {
-  font-weight: 700;
+@media screen and (max-width: 991px) {
+  header .nav-link {
+    margin-top: 6px;
+  }
 }
 header header nav li {
   display: inline;
@@ -280,6 +297,7 @@ main {
   height: 220px;
   margin-bottom: 150px;
   box-shadow: 5px 1px 25px 5px rgb(187, 152, 117);
+  border: 5px solid white;
 }
 #contenedor-galeria .galeria-seccion .carousel-control-next-icon {
   position: relative;
