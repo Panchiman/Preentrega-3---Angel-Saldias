@@ -8,17 +8,8 @@ footer{
         margin-right: 0px;
         margin-left: 0px;
     }
-    img{
-        height: 30px;
-        margin-right: 15px;
-        @media screen and (max-width: $resolucion-mobile){
-            margin-right: 10px;
-            margin-top: 20px;
-            height: 30px;
-            position:relative;
-            bottom: 15px;
-        }
-    }
+    
+    
     .container-fluid{
         .footer{
             display: flex;
@@ -70,6 +61,21 @@ footer{
                 display: flex;
                 align-items: flex-end;
                 flex-direction: column;
+                .links-footer{
+                    a:not(:last-child){
+                        margin-right: 10px;
+                        @media screen and (max-width: $resolucion-mobile){
+                            margin-right: 5px;}}
+                    img{
+                        height: 30px;
+                        @media screen and (max-width: $resolucion-mobile){
+                            margin-top: 20px;
+                            height: 30px;
+                            position:relative;
+                            bottom: 15px;
+                        }
+                        }
+                    }
                 @media screen and (max-width: $resolucion-mobile){ 
                     grid-area: 1 / 2 / 2 / 3;
                     min-width: 100px;

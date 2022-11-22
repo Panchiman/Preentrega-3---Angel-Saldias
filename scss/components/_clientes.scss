@@ -15,7 +15,6 @@
             font-size: 35px;
         }
     }
-    
     .text-color{
         color: rgb(242, 169, 35);
         font-weight: 800;
@@ -31,13 +30,20 @@
             }
         }
     }
+    // No me la quise jugar mucho con el nesting de sass para las costas de boostrap por miedo a romper todo
     .carousel-indicators{
         button{
             @media screen and (max-width: 767px){
                 display: none;
             }
         }
+    }
+    span{
+        @media screen and (max-width: 767px){
+            position: relative;
+            bottom: 30px;
 
+        }
     }
 }
 

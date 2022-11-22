@@ -26,11 +26,8 @@ header nav {
 }
 header .navbar-nav .nav-link.active, header .navbar-nav .show > .nav-link {
   font-weight: 700;
-  background-color: rgb(216, 3, 3);
+  background-color: rgb(191, 0, 0);
   letter-spacing: 1px;
-}
-header:hover {
-  color: white;
 }
 header .navbar-expand-lg .navbar-nav .nav-link {
   color: white;
@@ -38,12 +35,12 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 }
 header .navbar-expand-lg .navbar-nav .nav-link:hover {
   font-weight: 700;
-  background-color: rgb(122, 21, 21);
+  background-color: rgb(169, 27, 27);
 }
 header .nav-link {
   font-weight: 600;
   border-radius: 15px;
-  background-color: #d86143;
+  background-color: #8d0e0e;
 }
 @media screen and (max-width: 991px) {
   header .nav-link {
@@ -63,19 +60,6 @@ footer {
   footer {
     margin-right: 0px;
     margin-left: 0px;
-  }
-}
-footer img {
-  height: 30px;
-  margin-right: 15px;
-}
-@media screen and (max-width: 600px) {
-  footer img {
-    margin-right: 10px;
-    margin-top: 20px;
-    height: 30px;
-    position: relative;
-    bottom: 15px;
   }
 }
 footer .container-fluid .footer {
@@ -137,6 +121,25 @@ footer .container-fluid .seguinos-container {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
+}
+footer .container-fluid .seguinos-container .links-footer a:not(:last-child) {
+  margin-right: 10px;
+}
+@media screen and (max-width: 600px) {
+  footer .container-fluid .seguinos-container .links-footer a:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+footer .container-fluid .seguinos-container .links-footer img {
+  height: 30px;
+}
+@media screen and (max-width: 600px) {
+  footer .container-fluid .seguinos-container .links-footer img {
+    margin-top: 20px;
+    height: 30px;
+    position: relative;
+    bottom: 15px;
+  }
 }
 @media screen and (max-width: 600px) {
   footer .container-fluid .seguinos-container {
@@ -280,6 +283,12 @@ main {
     display: none;
   }
 }
+@media screen and (max-width: 767px) {
+  .contenedor-clientes span {
+    position: relative;
+    bottom: 30px;
+  }
+}
 
 #contenedor-galeria {
   margin-top: 30px;
@@ -362,6 +371,27 @@ main {
 }
 .contenedor-contactos p {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 315px) {
+  .contenedor-contactos p {
+    font-size: 13px;
+  }
+}
+.contenedor-contactos .contactos {
+  display: flex;
+}
+.contenedor-contactos .contactos .contacto {
+  text-decoration: none;
+  margin-left: 25px;
+  background-color: rgb(216, 3, 3);
+  border-radius: 15px;
+  padding: 7px 15px 7px 15px;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .contenedor-contactos .contactos {
+    flex-direction: column;
+  }
 }
 .contenedor-contactos .mapa {
   width: 100%;

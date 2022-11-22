@@ -27,12 +27,9 @@ header{
     }
     .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
         font-weight: 700;
-        background-color: rgb(216, 3, 3);
+        background-color: rgb(191, 0, 0);
 			letter-spacing: 1px;
             }
-        &:hover{
-            color: white;
-    }
     
 
     .navbar-expand-lg .navbar-nav .nav-link{
@@ -40,14 +37,14 @@ header{
         padding: 10px 20px 10px 20px;
         &:hover{
         font-weight: 700;
-        background-color: rgb(122, 21, 21);
+        background-color: rgb(169, 27, 27);
         }
     }
 
     .nav-link{
         font-weight: 600;
         border-radius: 15px;
-        background-color: #d86143;
+        background-color: #8d0e0e;
         @media screen and (max-width: $resolucion-responsive){
             margin-top: 6px;
         }
