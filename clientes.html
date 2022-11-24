@@ -102,13 +102,13 @@
     <div class="container-fluid">
         <div class="footer">
             <div class="copyright"><p>Copyright de tienda mondongo</p></div>
-            <div class="newsletter-text">
-                <p class="texto-visible">Se el primero en enterarse de nuestras proximas ofertas:</p>
+            <form action="form.php" method="POST" class="newsletter-text">
+                <label for="su-mail" class="texto-visible">Se el primero en enterarse de nuestras proximas ofertas:</label>
                 <!-- Esto es para que sea diferente el texto en la vista mobile o pc -->
-                <p class="hidden-text">Enterate de las nuevas ofertas:</p>
-                <!-- En este input pondrian el mail para recibir el newsletter -->
-                <input> 
-            </div>
+                <label for="su-mail" class="hidden-text">Enterate de las nuevas ofertas:</label>
+                <!-- En este input pondrian el mail para recibir el newsletter, no lo puedo hacer funcionar porque no tengo server mail -->
+                <input name="mail" type="email" placeholder="mail@ejemplo.com"> 
+            </form>
             <div class="seguinos-container">
                 <div>
                     <p class="seguinos-titulo">Seguinos:</p>
